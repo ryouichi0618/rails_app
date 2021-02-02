@@ -61,5 +61,14 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "refile", require: "refile/rails", github: 'menfe/refile'
+gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
+
+
+git init
+git add -A
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:ryouichi0618/rails_app.git
+git push -u origin main
+
