@@ -65,10 +65,5 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 
 
-git init
-git add -A
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:ryouichi0618/rails_app.git
-git push -u origin main
+
 

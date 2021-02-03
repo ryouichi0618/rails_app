@@ -2,5 +2,13 @@
 <p><%= @list.title %></p>
 <h2>本文</h2>
 <P><%= @list.body %></P>
+<h2>画像</h2>
+<!--アイコンが表示されイメージ画像が表示されない場合はサイズ指定が間違っている可能性あり-->
+<!--またアクションがの:imageを間違えているとデータベースに保存されないため表記されない-->
+<!--RuntimeErrorでRefile構成に以下を追加して、アプリケーションを再起動を求められることがある-->
+<%= attachment_image_tag @list, :image, :fill, 300, 300, format: 'jpeg' %>
 <%= link_to "編集", edit_todolist_path(@list.id) %>
-                    
+<%= link_to "削除", destroy_todolist_path(@list.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+
+
+
